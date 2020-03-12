@@ -20,4 +20,12 @@ public class MyTest {
 		int multiplied = calculator.calculate((x, y) -> x * y);
 		Assert.assertEquals(multiplied, 4);
 	}
+	
+	@Test
+	public void sub() {
+		
+		MyCalculator<Integer, Integer, Integer> calculator = new MyCalculator<Integer, Integer,Integer>(2,2);
+		int subracted = calculator.calculate((x, y) -> x - y);
+		Assert.assertEquals(subracted, 0);
+	}
 }
