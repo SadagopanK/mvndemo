@@ -26,6 +26,6 @@ public class MyTest {
 		
 		MyCalculator<Integer, Integer, Integer> calculator = new MyCalculator<Integer, Integer,Integer>(2,2);
 		int subracted = calculator.calculate((x, y) -> x - y);
-		Assert.assertEquals(subracted, 1);
+		Assert.assertEquals(subracted, 0);
 	}
 }
